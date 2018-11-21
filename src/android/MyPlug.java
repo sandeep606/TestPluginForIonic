@@ -24,7 +24,16 @@ public class MyPlug extends CordovaPlugin {
     private void add(JSONArray args, CallbackContext callbackContext) {
 
         if (args != nil){
-            callbackContext.success("Android- You called add function");
+
+            try
+            {
+                int val = 10;
+                callbackContext.success("Android- You called add function");
+            }
+            catch(exception e){
+                callbackContext.error("Expected one non-empty string argument.");
+            }
+             
         }
         else{
             callbackContext.error("Expected one non-empty string argument.");
