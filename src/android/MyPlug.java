@@ -1,4 +1,4 @@
-package cordova-plugin-myplugin;
+package cordova.plugin.myplugin;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -38,6 +38,5 @@ public class MyPlug extends CordovaPlugin {
         else{
             callbackContext.error("Expected one non-empty string argument.");
         }
-
     }
 }
